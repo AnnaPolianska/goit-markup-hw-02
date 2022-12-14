@@ -13,7 +13,7 @@ body {
     color:var(--primary-text-color);
 }
 
-.header-links, .advantages,  .workers ,  .buttons , .header-contacts-list , .workexamples-studio{
+.header-links, .advantages,  .workers ,  .buttons-list , .header-contacts-list , .workexamples-studio{
      list-style-type: none;
 }
 .maintitle{
