@@ -6,6 +6,8 @@
   --text-color: #E7E9FC;
   --footer-text-color: #E7E9FC;
   --section-background-color:#F4F4FD;
+  --hero-button-hover: #404BBF;
+
 } 
 body {
     background-color:var(--white-color);
@@ -17,8 +19,6 @@ body {
      list-style-type: none;
 }
 .maintitle{
-    font-family:inherit;
-    font-style: normal;
     font-weight:600;
     font-size: 36px;
     line-height:1.1;
@@ -33,14 +33,11 @@ body {
 .logo {
     text-transform: uppercase;
     font-family: 'Raleway';
-    font-style:normal;
     font-weight: 800;
     font-size: 18px;
     line-height:1.5;
     letter-spacing: 0.03em;
     color:#2E2F42;
-    width:44px;
-    height:24px;
     text-decoration:none;
 }
 .web  {
@@ -48,9 +45,7 @@ body {
 }
 
 /*Navigation*/
-.header-links .link {
-    font-family:inherit;
-    font-style:normal;
+.header-links .header-link {
     font-weight:600;
     font-size:var(--main-font-size);
     line-height:1.5;
@@ -60,9 +55,7 @@ body {
 }
 /*Contact*/
 .contact-mail , .contact-telephone {
-    font-family:inherit;
-    font-style: normal;
-    font-size: 16px;
+     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
     color:inherit;
@@ -70,10 +63,10 @@ body {
 }
 
 
-.link:hover ,
+.header-link:hover ,
 .contact-mail:hover ,
 .contact-telephone:hover,
-.link:focus ,
+.header-link:focus ,
 .contact-mail:focus , 
 .contact-telephone:focus-visible{
     color: var(--accent-color);
@@ -86,8 +79,6 @@ body {
 }
 .hero-heading{
     color:var(--white-color);
-    font-family:inherit;
-    font-style:normal;
     font-size:56px;
     line-height:1;
     letter-spacing:0.02em;
@@ -100,12 +91,19 @@ body {
     font-family: inherit;
     font-weight:600;
     cursor:pointer;
+    font-size:16px ;
+    line-height:1.1;
+}
+.hero-button:hover{
+ background-color: var(--hero-button-hover);
+
 }
 /*end of hero element*/
+.hidden-maintitle{
+    visibility: hidden;
+}
 .advantages .title , .workerstitle {
-    font-family:inherit;
-    font-style:normal;
-    font-weight: 600;
+   font-weight: 600;
     font-size: 20px;
     line-height:1.5;
     letter-spacing:0.02em;
@@ -113,15 +111,13 @@ body {
 
 }
 .advantages .text , .workerstext{
-    font-family:inherit;
-    font-size: 16px;
+     font-size: 16px;
     line-height: 1.5;
     letter-spacing:0.02em;
-    color:inherit;
 }
  
 
-.ourteam{
+.team{
     background-color:var(--section-background-color);
 }
 
@@ -136,7 +132,6 @@ body {
 
 }
 .footer-text{
-    font-weight:inherit;
     font-size: 16px;
     line-height:1.5;
     letter-spacing:0.02em;
@@ -144,13 +139,15 @@ body {
 }
 
 /*Portfolio page sections*/
+.portfolio-hidden-maintitle{
+    visibility: hidden;
+}
 .buttons-list .button{
     color:var(--accent-color);
    background-color: var(--section-background-color);
+   font-family: inherit;
    color: var(--accent-color);
    list-style-type: none;
-    font-family:inherit;
-   font-style: normal;
    font-weight: 600;
    font-size:16px;
    line-height:1.5;
@@ -162,8 +159,7 @@ body {
      {
    background-color: var(--accent-color);
    color:var(--white-color);
-   font-weight:inherit;
-   font-style: normal;
+   font-family: inherit;
    font-weight:600;
    font-size: 16px;
    line-height:1.5;
@@ -173,30 +169,30 @@ body {
 
 }
 
-.workexamples-portfolio{
-  list-style-type: none;
+.link{
+  text-decoration: none;
 }
-.work-examples .title{
-    font-family:inherit;
-    font-style: normal;
+.workexamples-portfolio{
+    list-style-type: none;
+}
+  
+
+.link .title{
     font-weight:600;
     font-size: 20px;
     line-height:1.5;
     letter-spacing: 0.02em;
     color:var(--brand-color);
-
 }
 .image-text{
-    font-family:inherit;
     font-size: 16px;
     line-height:1.5;
     letter-spacing:0.2em;
     color:var(--footer-text-color)
 }
-.work-examples .text{
-    font-family:inherit;
+.link .text{
     font-size: 16px;
     line-height:1.5;
     letter-spacing: 0.02em;
-    color: inherit;
+    color: var(--primary-text-color);
 }
